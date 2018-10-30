@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 
@@ -21,9 +22,8 @@
 
     <div id="video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></div>
     <div class="labels">
-        <label>http://bit.ly/trabajar-en-solstice</label>
+        <label>bit.ly/trabajar-en-solstice</label>
     </div>
-
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -95,6 +95,12 @@
         //    the player should play for six seconds and then stop.
         var done = false;
         function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                showPositions();
+            }
+        }
+        function showPositions() {
+
         }
         function stopVideo() {
             player.stopVideo();

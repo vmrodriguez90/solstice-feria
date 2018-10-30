@@ -9,11 +9,11 @@ body {
     right: 100px;
 }
 .labels label {
-    font-family: 'Montserrat';
+    font-family: 'Open Sans';
     font-size: 45px;
-    font-weight: bold;
-    padding: 0 20px;
-    color: #F5BF14;
-    text-shadow: 2px 2px white;
-    background: #666;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: #fff;
+    /*text-shadow: 2px 2px white;*/
+    background: rgba(0,0,0, 0.75);
 }
