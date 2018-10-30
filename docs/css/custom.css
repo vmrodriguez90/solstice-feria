@@ -5,13 +5,15 @@ body {
 .labels {
     position: fixed;
     z-index: 999;
-    top: 150px;
-    left: 200px;
+    top: 50px;
+    right: 100px;
 }
 .labels label {
     font-family: 'Montserrat';
-    font-size: 34px;
+    font-size: 45px;
     font-weight: bold;
+    padding: 0 20px;
     color: #F5BF14;
- text-shadow: white;
+    text-shadow: 2px 2px white;
+    background: #666;
 }
